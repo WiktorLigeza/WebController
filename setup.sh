@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Step 1: Creating virtual environment if it doesn't exist..."
-if [ ! -d "myflaskenv" ]; then
+if [ ! -d "venv" ]; then
     python3 -m venv venv
 fi
 
