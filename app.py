@@ -25,7 +25,7 @@ class CarController:
         # MQTT Configuration
         self.MQTT_BROKER = 'localhost'
         self.MQTT_PORT = 1883
-        self.MQTT_TOPIC = 'fake'
+        self.MQTT_TOPIC = 'gnss/data'
         self.mqtt_client = self.connect_mqtt()
         self.mqtt_client.loop_start()
 
