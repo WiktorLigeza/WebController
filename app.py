@@ -97,9 +97,9 @@ class CarController:
 
         # Handle rotation
         if turn_left:
-            self.heading += 0.05
+            self.heading += 0.2
         if turn_right:
-            self.heading -= 0.05
+            self.heading -= 0.2
 
         # Normalize heading to be within 0-360 degrees
         self.heading %= 360
@@ -108,7 +108,7 @@ class CarController:
         heading_rad: float = math.radians(self.heading)
 
         # Determine step size
-        step: float = 0.015  # default step
+        step: float = 0.010  # default step
         if forward:
             if shift:
                 step = 0.03  # increased step with shift

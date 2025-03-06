@@ -9,4 +9,4 @@ echo "Step 2: Activating virtual environment..."
 source venv/bin/activate
 
 echo "Step 3: Installing dependencies..."
-# pip install -r requirements.txt
+pip install -r requirements.txt
