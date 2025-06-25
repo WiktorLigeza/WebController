@@ -287,4 +287,4 @@ class CarController:
 if __name__ == '__main__':
     app = Flask(__name__)
     car_controller = CarController(app)
-    car_controller.socketio.run(app, debug=False, host='0.0.0.0', port=2222)
+    car_controller.socketio.run(app, debug=False, host='0.0.0.0', port=2222, allow_unsafe_werkzeug=True)
